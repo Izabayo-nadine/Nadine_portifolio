@@ -1,0 +1,29 @@
+Resume File Instructions:
+======================
+
+To add your resume:
+
+1. Save your resume as "resume.pdf" in the public/assets/ folder
+2. Make sure the file is:
+   - PDF format (recommended for professional use)
+   - Named exactly "resume.pdf"
+   - Under 5MB for optimal loading
+   - Professional and up-to-date
+
+3. The resume will be accessible via:
+   - Download button (downloads the PDF file)
+   - View Online button (opens PDF in new tab)
+
+4. Current placeholder shows a document icon with download/view options
+5. The resume section includes quick highlights of your key information
+
+File location: public/assets/resume.pdf
+
+Note: Make sure your resume includes:
+- Contact information
+- Education (Rwanda Coding Academy)
+- Skills and technologies
+- Projects and experience
+- Volunteer work (Ideation & Prototyping Program)
+- Any certifications or achievements
+

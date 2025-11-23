@@ -1,0 +1,23 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Netlify Forms configuration
+[context.production]
+  [context.production.environment]
+    NODE_ENV = "production"
+
+# Form notifications (configure in Netlify dashboard)
+# Go to: Site settings > Forms > Form notifications
+# Add notification with:
+# - To: izabayonadine08@gmail.com
+# - Subject: New message from portfolio contact form
+# - Template: Custom or default

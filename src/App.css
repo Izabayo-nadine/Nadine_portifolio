@@ -1,0 +1,38 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+.section {
+  margin-top: 72px;
+}
+
+.section h2 {
+  font-family: "Space Grotesk", system-ui;
+  font-size: 32px;
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 120px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 620px) {
+  main {
+    padding: 20px 16px 80px;
+  }
+  
+  .section {
+    margin-top: 48px;
+  }
+  
+  .section h2 {
+    font-size: 28px;
+  }
+}
+

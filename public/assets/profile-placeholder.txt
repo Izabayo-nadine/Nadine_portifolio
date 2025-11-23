@@ -1,0 +1,17 @@
+Profile Image Instructions:
+=======================
+
+To add your profile picture:
+
+1. Save your photo as "profile.jpg" in the public/assets/ folder
+2. Make sure the image is:
+   - Square aspect ratio (1:1) for best results
+   - At least 400x400 pixels for high quality
+   - JPG, PNG, or WebP format
+   - Professional headshot or clear portrait
+
+3. The image will automatically display when you add it
+4. If no image is found, a beautiful gradient placeholder with your initial "N" will show instead
+
+Current placeholder shows a gradient circle with "N" - this will be replaced when you add your photo!
+
