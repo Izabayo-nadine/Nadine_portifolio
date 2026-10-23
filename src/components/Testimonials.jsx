@@ -3,54 +3,47 @@ import React from 'react'
 const Testimonials = () => {
   const testimonials = [
     {
-      text: "Nadine's mentoring approach helped me understand complex algorithms. Her patience and clear explanations made learning enjoyable.",
+      text: "Nadine's mentoring approach helped me demystify complex algorithms and data structures. Her patience and structured step-by-step guidance made our Ideation & Prototyping semester both exciting and transformative.",
       author: "Jean Paul",
-      role: "Year 1 Student, RCA",
-      image: "/assets/testimonials/jean-paul.jpg",
+      role: "Year 1 Student, Rwanda Coding Academy",
       initials: "JP"
     },
     {
-      text: "Working with Nadine on the prototyping program was amazing. She brings creativity and technical expertise to every project.",
+      text: "Working alongside Nadine on full-stack and mobile applications was an exceptional experience. She brings architectural clarity, rapid debugging skills, and unwavering dedication to team success.",
       author: "Grace M.",
-      role: "Fellow Student",
-      image: "/assets/testimonials/grace.jpg",
+      role: "Engineering Peer, RCA",
       initials: "GM"
     },
     {
-      text: "Nadine's leadership skills and technical knowledge make her an excellent team member. She always delivers quality work.",
+      text: "Nadine is a reliable, disciplined software engineer. Her mastery of backend services in Java Spring Boot and Kafka event streams made our inter-service integration seamless.",
       author: "David K.",
-      role: "Project Collaborator",
-      image: "/assets/testimonials/david.jpg",
+      role: "Distributed Systems Project Collaborator",
       initials: "DK"
     }
   ]
 
   return (
-    <section id="testimonials" className="section">
-      <h2>Testimonials</h2>
+    <section id="testimonials" className="section testimonials-section">
+      <div className="section-header">
+        <span className="section-eyebrow">// PEER &amp; MENTEE FEEDBACK</span>
+        <h2>Peer Testimonials</h2>
+        <p className="section-desc">
+          Reflections from fellow engineering peers and students mentored in the Ideation &amp; Prototyping Program.
+        </p>
+      </div>
+
       <div className="testimonials-grid">
-        {testimonials.map((testimonial, index) => (
+        {testimonials.map((t, index) => (
           <div key={index} className="testimonial-card">
-            <div className="testimonial-content">
-              <p>"{testimonial.text}"</p>
-            </div>
-            <div className="testimonial-author">
-              <div className="testimonial-avatar">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.author}
-                  onError={(e) => {
-                    e.target.style.display = 'none'
-                    e.target.nextSibling.style.display = 'flex'
-                  }}
-                />
-                <div className="testimonial-avatar-placeholder">
-                  <span>{testimonial.initials}</span>
-                </div>
+            <div className="quote-mark">“</div>
+            <p className="testimonial-text">{t.text}</p>
+            <div className="testimonial-author-row">
+              <div className="author-avatar-chip">
+                <span>{t.initials}</span>
               </div>
-              <div className="testimonial-info">
-                <strong>{testimonial.author}</strong>
-                <span>{testimonial.role}</span>
+              <div className="author-details">
+                <strong className="author-name">{t.author}</strong>
+                <span className="author-role">{t.role}</span>
               </div>
             </div>
           </div>
