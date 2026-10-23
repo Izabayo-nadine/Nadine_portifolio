@@ -4,7 +4,14 @@ const skillCategories = [
   {
     id: 'backend',
     title: 'Backend & Distributed Systems',
-    icon: '⚡',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+        <line x1="6" y1="6" x2="6.01" y2="6"></line>
+        <line x1="6" y1="18" x2="6.01" y2="18"></line>
+      </svg>
+    ),
     description: 'High-throughput APIs, event-driven message streaming, microservices, and polyglot persistence.',
     skills: [
       { name: 'Java', level: 'Expert', desc: 'Core OOP, concurrency, streams, JVM tuning' },
@@ -23,7 +30,12 @@ const skillCategories = [
   {
     id: 'frontend',
     title: 'Mobile & Frontend Engineering',
-    icon: '📱',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+        <line x1="12" y1="18" x2="12.01" y2="18"></line>
+      </svg>
+    ),
     description: 'Responsive user interfaces, dynamic map telemetry, and fluid cross-platform native apps.',
     skills: [
       { name: 'Flutter & Dart', level: 'Expert', desc: 'Custom widgets, state management, native bridges' },
@@ -38,7 +50,12 @@ const skillCategories = [
   {
     id: 'devops',
     title: 'Testing, DevOps & Architecture',
-    icon: '🛠️',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polyline points="16 18 22 12 16 6"></polyline>
+        <polyline points="8 6 2 12 8 18"></polyline>
+      </svg>
+    ),
     description: 'Automated test verification, version control integrity, containerization, and agile execution.',
     skills: [
       { name: 'JUnit 5', level: 'Expert', desc: 'Unit testing, parameterized tests, test assertions' },
@@ -69,7 +86,7 @@ const Skills = () => {
         </p>
       </div>
 
-      {/* Category Toggles */}
+      {/* Category Toggles with Clean SVG Icons */}
       <div className="skills-tabs" role="tablist">
         <button 
           className={`skills-tab ${selectedCategory === 'all' ? 'skills-tab--active' : ''}`}
@@ -81,19 +98,33 @@ const Skills = () => {
           className={`skills-tab ${selectedCategory === 'backend' ? 'skills-tab--active' : ''}`}
           onClick={() => setSelectedCategory('backend')}
         >
-          ⚡ Backend &amp; Kafka
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: 6, verticalAlign: -2 }}>
+            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+          </svg>
+          Backend &amp; Kafka
         </button>
         <button 
           className={`skills-tab ${selectedCategory === 'frontend' ? 'skills-tab--active' : ''}`}
           onClick={() => setSelectedCategory('frontend')}
         >
-          📱 Mobile &amp; Frontend
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: 6, verticalAlign: -2 }}>
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+          </svg>
+          Mobile &amp; Frontend
         </button>
         <button 
           className={`skills-tab ${selectedCategory === 'devops' ? 'skills-tab--active' : ''}`}
           onClick={() => setSelectedCategory('devops')}
         >
-          🛠️ Testing &amp; Tooling
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: 6, verticalAlign: -2 }}>
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          Testing &amp; Tooling
         </button>
       </div>
 

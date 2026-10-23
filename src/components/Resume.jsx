@@ -12,22 +12,43 @@ const Resume = () => {
 
   const highlights = [
     {
-      icon: '🎓',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+        </svg>
+      ),
       title: 'Rwanda Coding Academy Graduate',
       desc: 'Graduated in Software Engineering with deep foundations in distributed systems and systems programming'
     },
     {
-      icon: '⚡',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+      ),
       title: 'Distributed Systems & Mobile',
       desc: 'Hands-on experience in Java, Spring Boot, Apache Kafka, FastAPI, PostgreSQL, and Flutter'
     },
     {
-      icon: '🤝',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </svg>
+      ),
       title: 'Engineering Mentorship',
       desc: 'Volunteer mentor for Year 1 cohorts in the Ideation & Prototyping program'
     },
     {
-      icon: '🛡️',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <polyline points="9 12 11 14 15 10"></polyline>
+        </svg>
+      ),
       title: 'Production Verification',
       desc: 'Rigorous unit & integration test coverage via JUnit 5, Mockito, and Git PR standards'
     }

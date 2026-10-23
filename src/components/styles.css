@@ -1591,7 +1591,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+}
+
+.strength-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
 }
 
 .strength-telemetry {
@@ -1674,8 +1680,11 @@
 }
 
 .machine-banner__icon {
-  font-size: 38px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
 }
 
 .machine-banner__content h4 {
@@ -1898,6 +1907,13 @@
   border-radius: var(--radius-full);
   margin-bottom: 20px;
   align-self: flex-start;
+}
+
+.shield-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
 }
 
 .reference-card__header {
@@ -2267,15 +2283,16 @@
 }
 
 .highlight-icon-circle {
-  font-size: 20px;
   width: 40px;
   height: 40px;
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 245, 212, 0.08);
+  border: 1px solid rgba(0, 245, 212, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  color: var(--accent);
 }
 
 .highlight-info h4 {
