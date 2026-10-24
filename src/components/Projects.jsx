@@ -47,7 +47,7 @@ const projectsData = [
     description: 'Career platform connecting job seekers with relevant opportunities via tailored discovery filters, built with a Next.js and React frontend and Node.js REST APIs.',
     tags: ['JavaScript', 'React', 'Next.js', 'Node.js', 'REST APIs', 'Git', 'GitHub'],
     githubUrl: 'https://github.com/Izabayo-nadine/job-match-frontend',
-    liveUrl: 'https://job-match-frontend-omega.vercel.app/'
+    liveUrl: 'https://job-match-frontend-ir8n.vercel.app/'
   }
 ]
 
