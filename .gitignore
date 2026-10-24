@@ -1,0 +1,133 @@
+# ===========================
+# DEPENDENCIES
+# ===========================
+node_modules/
+.pnp
+.pnp.js
+
+# ===========================
+# BUILD OUTPUT (never commit build artifacts)
+# ===========================
+dist/
+dist-ssr/
+build/
+
+# ===========================
+# ENVIRONMENT & SECRETS (sensitive — never commit)
+# ===========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.env
+
+# ===========================
+# LOCK FILES (optional – pick one to keep, omit the others)
+# package-lock.json is fine to keep if you want reproducible installs
+# ===========================
+# package-lock.json  ← uncomment this line if you want to ignore it
+yarn.lock
+pnpm-lock.yaml
+.pnp.cjs
+.pnp.loader.mjs
+
+# ===========================
+# VITE CACHE
+# ===========================
+.vite/
+vite.config.ts.timestamp-*
+vite.config.js.timestamp-*
+
+# ===========================
+# LOG FILES
+# ===========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+logs/
+
+# ===========================
+# OS GENERATED FILES
+# ===========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===========================
+# IDE & EDITOR FILES
+# ===========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*~
+
+# ===========================
+# TESTING & COVERAGE
+# ===========================
+coverage/
+test-results/
+.nyc_output/
+*.lcov
+
+# ===========================
+# TEMPORARY FILES
+# ===========================
+*.tmp
+*.temp
+*.bak
+
+# ===========================
+# COMPILED / BINARY FILES
+# ===========================
+*.class
+*.obj
+*.exe
+*.jar
+*.war
+*.gem
+*.pyc
+__pycache__/
+
+# ===========================
+# PLACEHOLDER / INTERNAL DOCS
+# (useful locally but not needed in repo)
+# ===========================
+public/assets/profile-placeholder.txt
+public/assets/resume-placeholder.txt
+public/assets/testimonials/README.md
+CONTACT_FORM_SETUP.md
+
+# ===========================
+# DUPLICATE / LEGACY ROOT FILES
+# (the Vite React app is the main app; these root files are from an
+#  older plain-HTML version of the site and are not needed in production)
+# ===========================
+script.js
+styles.css
+
+# ===========================
+# NETLIFY
+# ===========================
+.netlify/
+
+# ===========================
+# MISCELLANEOUS
+# ===========================
+vendor/bundle/
+.cache/
+*.map
