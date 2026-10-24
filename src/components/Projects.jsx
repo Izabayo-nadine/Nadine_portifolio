@@ -10,7 +10,7 @@ const projectsData = [
     image: '/assets/projects/inzirax.jpg',
     description: 'A mobile application built with Flutter, Dart, and Mapbox that helps road users access real-time route information, hazard updates, and incident reporting backed by FastAPI.',
     tags: ['Flutter', 'Dart', 'Mapbox', 'FastAPI', 'Python', 'Git', 'GitHub'],
-    githubUrl: 'https://github.com/Izabayo-nadine/InziraX',
+    githubUrl: 'https://github.com/Izabayo-nadine/inzirax-frontend',
     liveUrl: null
   },
   {
@@ -22,7 +22,7 @@ const projectsData = [
     image: '/assets/projects/hospinix.png',
     description: 'Digital healthcare management platform supporting hospital and pharmacy workflows, featuring Java Spring Boot backend services, PostgreSQL persistence, and responsive React & Next.js interfaces.',
     tags: ['Java', 'Spring Boot', 'PostgreSQL', 'JPA', 'Hibernate', 'React', 'Next.js', 'REST APIs', 'JWT'],
-    githubUrl: 'https://github.com/Izabayo-nadine/Hospinx-frontend',
+    githubUrl: 'https://github.com/Izabayo-nadine/Hospinix',
     liveUrl: 'https://hospinix-teal.vercel.app/'
   },
   {
@@ -46,8 +46,8 @@ const projectsData = [
     image: '/assets/projects/jobmatch.png',
     description: 'Career platform connecting job seekers with relevant opportunities via tailored discovery filters, built with a Next.js and React frontend and Node.js REST APIs.',
     tags: ['JavaScript', 'React', 'Next.js', 'Node.js', 'REST APIs', 'Git', 'GitHub'],
-    githubUrl: 'https://github.com/Izabayo-nadine/job-match-frontend',
-    liveUrl: 'https://job-match-frontend-ir8n.vercel.app/'
+    githubUrl: 'https://github.com/Izabayo-nadine/JobMatchFrontend',
+    liveUrl: 'https://job-match-frontend-ir8n.vercel.app'
   }
 ]
 
